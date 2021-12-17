@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body{
+    background-image: url("https://www.kartinki24.ru/uploads/gallery/main/31/kartinki24_ru_nature_136.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Open Sans';
+    min-height: 740px;
+    overflow: hidden;
+}
+
+.btn{
+    padding: 15px 35px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0,0.2);;
+    background: aliceblue;
+    font-weight: 700;
+    color: rgb(0, 0, 0,0.8);
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: .5s ease all;
+}
+.btn:active{
+    background: rgb(135, 184, 212);
+}
+
+.form{
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 0%;
+opacity: 0;
+transition: 0.5s ease all;
+animation-name:blockApp;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+@keyframes blockApp{
+    0%{
+        margin-top: 0%;
+        opacity: 0;
+
+    }
+    100%{
+margin-top: 10%;
+opacity: 1;
+    }
+}
+h1{
+ 
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.753);
+}
+.form__layer{
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+    max-width: 680px;   
+    border-radius: 25px;
+}
+.form__layer *{
+    margin: 15px 0px;
+}
+.ourInput{
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.ourSelect{
+    outline: none;
+    padding: 10px 40px 5px 5px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.753);
+
+}
+@media(max-width:375px){
+    .form__layer{
+        padding: 30px;
+    }
+}
